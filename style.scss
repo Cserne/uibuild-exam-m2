@@ -1,0 +1,148 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    background:transparent;
+    outline:none;
+    text-decoration:none;
+    outline:none;
+    font-family:inherit;
+    box-sizing:border-box;
+}
+  
+ol, ul, li {
+    list-style:none;
+    display:block;
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing:0;
+}
+  
+a, img {
+    border: none;
+}
+  
+button, a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button, input, textarea, select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0;
+}
+
+
+body {
+    background-color: #F7E4D4;
+}
+
+#root {
+    max-width: 500px;
+    height: 480px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #467745;
+}
+
+textarea, input, input[type="text"]::placeholder  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+textarea[type="text"] {
+    padding-top: 20px;
+    height: 120px;
+    vertical-align: top;
+}
+
+input[placeholder="Tárgy"], textarea[type="text"] {
+    max-width: 480px;
+    color: #467745;
+    text-indent: 25px;
+
+}
+
+input[placeholder="Tárgy"] {
+    height: 64px;
+}
+
+input, textarea {
+    background-color: #fff;
+}
+
+#root div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+textarea[type="checkbox"] {
+    width: 20px;
+    min-width: 20px;
+    margin: 0 15px 0 0;
+    height: 20px;
+    background-color: #fff;
+}
+
+#root div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color:#467745;
+}
+
+p {
+    line-height: 1.5;
+}
+
+span {
+    text-decoration: underline;
+}
+
+button {
+    max-width: 280px;
+    height: 80px;
+    margin-top: 25px;
+    padding: 0 75px;
+    align-self: center;
+    border-radius: 50px;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #F7E4D4;
+    background-color: #467745;
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        margin-left: 20px;
+        text-align: left;
+        font-size: 36px;
+    }
+
+    input[type="text"], textarea[type="text"], #root div {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+}
